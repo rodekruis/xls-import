@@ -39,7 +39,7 @@ $ python xls2xml.py SPREADSHEETNAME.xls
     * The \_index field should be unique integer numbers
 1. Select_multiples columns may be formatted either like column G in the image below, or as boolean columns like columns H - K.
 
-	![multi-select](https://raw.githubusercontent.com/rodekruis/xls-import/NLRC-updates/multi-select.png)
+	![multi-select](https://raw.githubusercontent.com/rodekruis/xls-import/master/multi-select.png)
 
 1. If using boolean select_multiple columns, the headers use the character "/" as an element name/content delimiter.
 1. Repeating groups appear in a new sheet
