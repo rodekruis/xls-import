@@ -32,9 +32,9 @@ $ python xls2xml.py SPREADSHEETNAME.xls
 1.  \_\_version\_\_ and other meta columns follow content columns. \_\_version\_\_ should be the first column following the content.
 1. The other two mandatory meta columns are \_uuid and \_index.
     * To automatically generate the \_uuid field you can use the following formula in Excel:
-```
-    =LOWER(CONCATENATE(DEC2HEX(RANDBETWEEN(0,POWER(16,8)),8),"-",DEC2HEX(RANDBETWEEN(0,POWER(16,4)),4),"-","4",DEC2HEX(RANDBETWEEN(0,POWER(16,3)),3),"-",DEC2HEX(RANDBETWEEN(8,11)),DEC2HEX(RANDBETWEEN(0,POWER(16,3)),3),"-",DEC2HEX(RANDBETWEEN(0,POWER(16,8)),8),DEC2HEX(RANDBETWEEN(0,POWER(16,4)),4)))
-```
+	```
+	    =LOWER(CONCATENATE(DEC2HEX(RANDBETWEEN(0,POWER(16,8)),8),"-",DEC2HEX(RANDBETWEEN(0,POWER(16,4)),4),"-","4",DEC2HEX(RANDBETWEEN(0,POWER(16,3)),3),"-",DEC2HEX(RANDBETWEEN(8,11)),DEC2HEX(RANDBETWEEN(0,POWER(16,3)),3),"-",DEC2HEX(RANDBETWEEN(0,POWER(16,8)),8),DEC2HEX(RANDBETWEEN(0,POWER(16,4)),4)))
+	```
 
     * The \_index field should be unique integer numbers
 1. Select_multiples columns may be formatted either like column G in the image below, or as boolean columns like columns H - K.
@@ -56,7 +56,7 @@ It will show the if the import was successful.
 
 ## With post.py
 
-post.py will post tempfiles/*.xml to kc.kobotools.org:
+post.py will post tempfiles/*.xml to kc.kc.humanitarianresponse.info:
 
 Before you run post.py:
 - Check (and double-check) to see if a ~/.netrc file already exists. If not, create it.
