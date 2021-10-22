@@ -56,7 +56,7 @@ It will show the if the import was successful.
 
 ## With post.py
 
-post.py will post tempfiles/*.xml to kc.kc.humanitarianresponse.info:
+post.py will post tempfiles/*.xml to kc.humanitarianresponse.info:
 
 Before you run post.py:
 - Check (and double-check) to see if a ~/.netrc file already exists. If not, create it.
